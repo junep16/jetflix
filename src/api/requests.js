@@ -9,5 +9,4 @@ const requests = {
   fetchRomanceMovies: "/disvocer/movie?with_genres=10749",
   fetchDocumentaries: "/disvocer/movie?with_genres=99",
 }
-
 export default requests; 
