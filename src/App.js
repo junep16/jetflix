@@ -2,6 +2,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Banner from "./components/Banner"; 
 import Row from './components/Row';
+import requests from './api/requests';
 
 function App() {
   return (
@@ -11,15 +12,14 @@ function App() {
       <Row 
         title="NETFLIX ORIGINALS"
         id="NO"
-        fetchURL={Request.fetchNetflixOriginals}
+        fetchURL={requests.fetchNetflixOriginals}
         isLargeRow
       />
-      <Row title="Trending Now" id="TN" fetchURL={Request.fetchTrending}/>
-      <Row title="Top Rated" id="TR" fetchURL={Request.fetchTopRated}/>
-      <Row title="Action Movies" id="AM" fetchURL={Request.fetchActionMovies}/>
-      <Row title="Comedy Movies" id="CM" fetchURL={Request.fetchComedyMovies}/>
+      <Row title="Trending Now" id="TN" fetchURL={requests.fetchTrending}/>
+      <Row title="Top Rated" id="TR" fetchURL={requests.fetchTopRated}/>
+      <Row title="Action Movies" id="AM" fetchURL={requests.fetchActionMovies}/>
+      <Row title="Comedy Movies" id="CM" fetchURL={requests.fetchComedyMovies}/>
     </div>
   );
 }
-
 export default App;
