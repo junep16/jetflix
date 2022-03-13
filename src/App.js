@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Banner from "./components/Banner"; 
 import Row from './components/Row';
 import requests from './api/requests';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <Row title="Horror Movies" id="HM" fetchURL={requests.fetchHorrorMovies}/>
       <Row title="Romance Movies" id="RM" fetchURL={requests.fetchRomanceMovies}/>
       <Row title="Documentaries" id="DM" fetchURL={requests.fetchDocumentaries}/>
-
+      <Footer></Footer>
     </div>
   );
 }
