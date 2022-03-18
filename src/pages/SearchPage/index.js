@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useLocation } from "react-router-dom";  
+import "./SearchPage.css"; 
 
 export default function SearchPage() {
   const [searchResults, setSearchResults] = useState([]); 
